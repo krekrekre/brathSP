@@ -1,0 +1,142 @@
+header {
+  background-color: $primaryRed;
+  display: flex;
+  justify-content: center;
+
+  .nav-container {
+    font-family: "Roboto", sans-serif;
+    width: 1320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include xl {
+      justify-content: flex-start;
+    }
+    .nav-logo {
+      #logo-mobile {
+        display: block;
+      }
+      #logo-desktop {
+        display: none;
+      }
+      @include md {
+        margin-bottom: -88px;
+        #logo-mobile {
+          display: none;
+        }
+        #logo-desktop {
+          display: block;
+        }
+      }
+      margin-bottom: -46px;
+      padding-left: 2px;
+      @include xl {
+        padding-left: 0;
+      }
+    }
+    .nav-links {
+      display: flex;
+      .down {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 700;
+        color: $textColor;
+      }
+      @include xl {
+        .down {
+          display: none;
+        }
+      }
+      .menu-toggle {
+        background-color: $primaryRed;
+        color: $textColor;
+        padding: 10px 25px;
+        font-size: 1.7rem;
+        border: none;
+        cursor: pointer;
+        @include xl {
+          display: none;
+        }
+      }
+      ul {
+        display: none;
+        gap: 2rem;
+        font-weight: 700;
+        list-style: none;
+        @include xl {
+          display: flex;
+          align-items: center;
+        }
+        .pdf {
+          font-size: 14px;
+          a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+        li {
+          a {
+            text-decoration: none;
+            color: $textColor;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+.nav-opentime {
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+  padding-right: 1rem;
+  border-top: 0px;
+  @include xl {
+    border-top: solid 1px black;
+    padding-right: 0px;
+  }
+  .container {
+    width: 1280px;
+    display: flex;
+    justify-content: flex-end;
+    .content {
+      color: $textColor;
+
+      img {
+        display: none;
+        @include xl {
+          display: block;
+        }
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 0.62rem;
+        span {
+          font-weight: 700;
+        }
+        #break {
+          height: 4px;
+        }
+      }
+
+      @include xl {
+        display: flex;
+        gap: 5px;
+        p {
+          display: flex;
+          flex-direction: row;
+          font-size: 0.875rem;
+          color: $textColor;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
