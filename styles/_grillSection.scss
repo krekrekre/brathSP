@@ -28,6 +28,10 @@
           font-weight: 700;
           font-size: 2rem;
           line-height: 2.625rem;
+          text-align: center;
+          @include xl {
+            text-align: start;
+          }
         }
         ul {
           display: flex;
@@ -36,6 +40,7 @@
           list-style: inside;
           padding-left: 1.25rem;
           @include xl {
+            list-style: outside;
             gap: 1rem;
           }
           li {
