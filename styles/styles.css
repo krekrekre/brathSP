@@ -4,7 +4,6 @@ header {
   justify-content: center;
 }
 header .nav-container {
-  font-family: "Roboto", sans-serif;
   width: 1320px;
   display: flex;
   align-items: center;
@@ -16,6 +15,7 @@ header .nav-container {
   }
 }
 header .nav-container .nav-logo {
+  z-index: 99;
   margin-bottom: -46px;
   padding-left: 2px;
 }
@@ -72,14 +72,15 @@ header .nav-container .nav-links .menu-toggle {
 }
 header .nav-container .nav-links ul {
   display: none;
-  gap: 2rem;
-  font-weight: 700;
-  list-style: none;
 }
 @media (min-width: 1340px) {
   header .nav-container .nav-links ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    list-style: none;
     display: flex;
     align-items: center;
+    gap: 2.4rem;
   }
 }
 header .nav-container .nav-links ul .pdf {
@@ -153,6 +154,110 @@ header .nav-container .nav-links ul li a {
   }
 }
 
+.swiper-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-section .swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 830px) {
+  .swiper-section .swiper .swiper-slide {
+    align-items: stretch;
+  }
+}
+.swiper-section .swiper .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper-section .swiper .swiper-slide .swiper-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3019607843);
+  height: auto;
+}
+@media (min-width: 1700px) {
+  .swiper-section .swiper .swiper-slide .swiper-text {
+    height: 51.5%;
+    width: 32.5%;
+  }
+}
+@media (min-width: 1340px) {
+  .swiper-section .swiper .swiper-slide .swiper-text {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    justify-content: flex-end;
+    width: 32.5%;
+  }
+}
+.swiper-section .swiper .swiper-slide .swiper-text .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+@media (min-width: 1340px) {
+  .swiper-section .swiper .swiper-slide .swiper-text .container {
+    padding: 3.8rem;
+    width: 43.5%;
+    align-items: start;
+  }
+}
+.swiper-section .swiper .swiper-slide .swiper-text .container h1 {
+  font-family: "Roboto Condensed";
+  font-size: 2.375rem;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+@media (min-width: 1340px) {
+  .swiper-section .swiper .swiper-slide .swiper-text .container h1 {
+    text-align: start;
+  }
+}
+.swiper-section .swiper .swiper-slide .swiper-text .container p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+  text-align: center;
+}
+@media (min-width: 1340px) {
+  .swiper-section .swiper .swiper-slide .swiper-text .container p {
+    text-align: start;
+  }
+}
+.swiper-section .swiper .swiper-slide .ban-dsk {
+  display: none;
+}
+@media (min-width: 830px) {
+  .swiper-section .swiper .swiper-slide .ban-dsk {
+    display: block;
+  }
+}
+.swiper-section .swiper .swiper-slide .ban-dsk img {
+  height: 45vh;
+}
+@media (min-width: 1340px) {
+  .swiper-section .swiper .swiper-slide .ban-dsk img {
+    height: auto;
+  }
+}
+.swiper-section .swiper .swiper-slide .ban-mob {
+  display: block;
+}
+@media (min-width: 830px) {
+  .swiper-section .swiper .swiper-slide .ban-mob {
+    display: none;
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;

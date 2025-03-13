@@ -4,7 +4,6 @@ header {
   justify-content: center;
 
   .nav-container {
-    font-family: "Roboto", sans-serif;
     width: 1320px;
     display: flex;
     align-items: center;
@@ -13,6 +12,7 @@ header {
       justify-content: flex-start;
     }
     .nav-logo {
+      z-index: 99;
       #logo-mobile {
         display: block;
       }
@@ -62,12 +62,13 @@ header {
       }
       ul {
         display: none;
-        gap: 2rem;
-        font-weight: 700;
-        list-style: none;
         @include xl {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          list-style: none;
           display: flex;
           align-items: center;
+          gap: 2.4rem;
         }
         .pdf {
           font-size: 14px;
