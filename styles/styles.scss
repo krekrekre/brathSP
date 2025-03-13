@@ -3,8 +3,10 @@
 @import "./header";
 @import "./swiper";
 @import "./drySection";
+@import "./grillSection";
 
 body {
+  height: 2050vh;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   background-color: $backgroundColor;

@@ -339,10 +339,11 @@ header .nav-container .nav-links ul li a {
   height: 2.938rem;
   background: #a62120;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
   border: 1px solid white;
   padding: 1rem 2.6rem;
   margin: 1.5rem 0.5rem 0px 0px;
+  cursor: pointer;
 }
 @media (min-width: 490px) {
   .dry .container .left .left-container .buttons button {
@@ -367,7 +368,88 @@ header .nav-container .nav-links ul li a {
   flex-direction: column;
 }
 
+.grill {
+  font-family: "Roboto", sans-serif;
+}
+.grill .container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1020px) {
+  .grill .container {
+    flex-direction: row;
+  }
+}
+.grill .container .left {
+  background-color: #a62120;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+@media (min-width: 1020px) {
+  .grill .container .left {
+    width: 50%;
+  }
+}
+.grill .container .left .left-container {
+  text-align: center;
+  margin: 4rem 0px;
+}
+@media (min-width: 1020px) {
+  .grill .container .left .left-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -100px;
+  }
+}
+.grill .container .left .left-container h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.625rem;
+}
+.grill .container .left .left-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: inside;
+  padding-left: 1.25rem;
+}
+@media (min-width: 1340px) {
+  .grill .container .left .left-container ul {
+    gap: 1rem;
+  }
+}
+.grill .container .left .left-container ul li {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 24px;
+  opacity: 0.8;
+}
+.grill .container .left .left-container button {
+  color: black;
+  font-size: 1rem;
+  line-height: 22px;
+  font-weight: 400;
+  background-color: white;
+  padding: 1rem 4rem;
+  border: 0px;
+  border-radius: 50px;
+  margin: 1rem 0px 1rem 0px;
+  cursor: pointer;
+}
+@media (min-width: 1020px) {
+  .grill .container .right {
+    width: 50%;
+  }
+}
+.grill .container .right .right-container img {
+  width: 100%;
+}
+
 body {
+  height: 2050vh;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #000;

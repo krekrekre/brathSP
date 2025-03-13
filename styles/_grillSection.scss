@@ -1,0 +1,73 @@
+.grill {
+  font-family: "Roboto", sans-serif;
+  .container {
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    @include lg {
+      flex-direction: row;
+    }
+    .left {
+      background-color: $secondaryRed;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      @include lg {
+        width: 50%;
+      }
+      .left-container {
+        text-align: center;
+        margin: 4rem 0px;
+        @include lg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -190px 0 0 -100px;
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.625rem;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+          list-style: inside;
+          padding-left: 1.25rem;
+          @include xl {
+            gap: 1rem;
+          }
+          li {
+            font-weight: 300;
+            font-size: $primaryFontSize;
+            line-height: 24px;
+            opacity: 0.8;
+          }
+        }
+        button {
+          color: black;
+          font-size: $primaryFontSize;
+          line-height: 22px;
+          font-weight: 400;
+          background-color: white;
+          padding: 1rem 4rem;
+          border: 0px;
+          border-radius: 50px;
+          margin: 1rem 0px 1rem 0px;
+          cursor: pointer;
+        }
+      }
+    }
+    .right {
+      @include lg {
+        width: 50%;
+      }
+      .right-container {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
