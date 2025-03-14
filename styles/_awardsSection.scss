@@ -1,0 +1,78 @@
+.awards {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 0px 5rem 0px;
+
+  .container {
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem;
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 1rem;
+      width: 80%;
+      @include lg {
+        flex-direction: row;
+      }
+      @include xl {
+        width: 63%;
+        // flex-direction: column;
+      }
+      @include breakpoint(1620px) {
+        width: 50%;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.625rem;
+        text-align: center;
+        @include lg {
+          text-align: start;
+        }
+      }
+      button {
+        @include primaryButton;
+        padding: 1rem 3rem;
+      }
+    }
+    .top-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+      @include lg {
+        padding-top: 0px;
+        align-items: start;
+      }
+    }
+    .separator {
+      padding: 4rem 0px;
+      img {
+        width: 100%;
+      }
+    }
+    .bot {
+      .image-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+        @include md {
+          gap: 1rem;
+        }
+        img {
+          height: 173px;
+          width: 186px;
+          @include md {
+            height: 243px;
+            width: 262px;
+          }
+        }
+      }
+    }
+  }
+}
