@@ -14,9 +14,12 @@ footer {
       padding: 1rem 2rem;
     }
     .info {
-      width: 33%;
+      width: 90%;
       display: flex;
       justify-content: center;
+      @include lg {
+        width: 33%;
+      }
       .info-container {
         display: flex;
         flex-direction: column;

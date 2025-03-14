@@ -907,9 +907,14 @@ footer .container {
   }
 }
 footer .container .info {
-  width: 33%;
+  width: 90%;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1020px) {
+  footer .container .info {
+    width: 33%;
+  }
 }
 footer .container .info .info-container {
   display: flex;
