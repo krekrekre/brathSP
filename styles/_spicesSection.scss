@@ -60,7 +60,7 @@
             text-align: start;
           }
           @include xl {
-            font-size: 1rem;
+            font-size: $primaryFontSize;
             width: 55%;
           }
         }
