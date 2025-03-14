@@ -1,9 +1,11 @@
 @import "./variables";
 @import "./breakpoints";
+@import "./mixins";
 @import "./header";
 @import "./swiper";
 @import "./drySection";
 @import "./grillSection";
+@import "./_handwerkSection";
 
 body {
   height: 2050vh;

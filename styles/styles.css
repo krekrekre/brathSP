@@ -171,7 +171,7 @@ header .nav-container .nav-links ul li a {
 .swiper-section .swiper .swiper-slide img {
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .swiper-section .swiper .swiper-slide .swiper-text {
   position: relative;
@@ -324,6 +324,7 @@ header .nav-container .nav-links ul li a {
   line-height: 24px;
   margin: 1.5rem 0px;
   text-align: center;
+  opacity: 0.7;
 }
 @media (min-width: 1020px) {
   .dry .container .left .left-container p {
@@ -341,8 +342,10 @@ header .nav-container .nav-links ul li a {
   color: #fff;
   border-radius: 50px;
   border: 1px solid white;
+  line-height: 0px;
   padding: 1rem 2.6rem;
   margin: 1.5rem 0.5rem 0px 0px;
+  cursor: pointer;
   cursor: pointer;
 }
 @media (min-width: 490px) {
@@ -426,6 +429,7 @@ header .nav-container .nav-links ul li a {
   .grill .container .left .left-container ul {
     list-style: outside;
     gap: 1rem;
+    text-align: start;
   }
 }
 .grill .container .left .left-container ul li {
@@ -455,9 +459,90 @@ header .nav-container .nav-links ul li a {
   width: 100%;
 }
 
+.handwerk {
+  font-family: "Roboto", sans-serif;
+}
+.handwerk .container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+}
+.handwerk .container .top {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  align-items: center;
+}
+@media (min-width: 1340px) {
+  .handwerk .container .top {
+    width: 50%;
+  }
+}
+.handwerk .container .top h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.625rem;
+  text-align: center;
+}
+.handwerk .container .top h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-align: center;
+}
+.handwerk .container .top p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.handwerk .container .top button {
+  font-weight: 400;
+  font-size: 1rem;
+  height: 2.938rem;
+  background: #a62120;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid white;
+  line-height: 0px;
+  padding: 1rem 2.6rem;
+  margin: 1.5rem 0.5rem 0px 0px;
+  cursor: pointer;
+  padding: 1rem 3rem;
+}
+.handwerk .container .separator {
+  padding: 4rem 0px;
+}
+.handwerk .container .separator img {
+  width: 100%;
+}
+.handwerk .container .bot .image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+@media (min-width: 720px) {
+  .handwerk .container .bot .image-wrapper {
+    gap: 1rem;
+  }
+}
+.handwerk .container .bot .image-wrapper img {
+  height: 173px;
+  width: 186px;
+}
+@media (min-width: 720px) {
+  .handwerk .container .bot .image-wrapper img {
+    height: 243px;
+    width: 262px;
+  }
+}
+
 body {
   height: 2050vh;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #000;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
