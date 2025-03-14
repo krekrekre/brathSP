@@ -74,4 +74,28 @@ footer {
       }
     }
   }
+  .copyright {
+    .copy-container {
+      background-color: #66000b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 12vw;
+      @include lg {
+        flex-direction: row;
+      }
+      p {
+        margin: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.8;
+        padding: 1.8rem;
+        text-align: center;
+        @include lg {
+          padding: 0px;
+        }
+      }
+    }
+  }
 }

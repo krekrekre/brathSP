@@ -7,6 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
 var swiper2 = new Swiper(".mySwiper2", {
   effect: "coverflow",
   grabCursor: true,
@@ -22,4 +23,16 @@ var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+
+const toggleButton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+const closeMenu = document.querySelector(".menu-close");
+
+toggleButton.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
