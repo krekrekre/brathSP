@@ -1,0 +1,74 @@
+footer {
+  font-family: "Roboto", sans-serif;
+  color: $textColor;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $primaryRed;
+    padding: 3rem 2rem;
+    margin-top: 6rem;
+    @include lg {
+      flex-direction: row;
+      padding: 1rem 2rem;
+    }
+    .info {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lg {
+          align-items: start;
+        }
+        p {
+          display: flex;
+          align-items: center;
+
+          &:nth-child(2) {
+            padding-left: 0px;
+            @include lg {
+              padding-left: 24px;
+            }
+          }
+          svg {
+            display: none;
+            @include lg {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      width: 33%;
+      justify-content: center;
+      display: flex;
+      margin: 2rem 0px;
+      @include lg {
+        margin: auto;
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 33%;
+      @include breakpoint(1300px) {
+        flex-direction: row;
+      }
+      .links-wrapper {
+        display: flex;
+        gap: 1rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: $primaryFontSize;
+      }
+    }
+  }
+}

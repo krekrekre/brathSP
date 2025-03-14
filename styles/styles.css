@@ -855,6 +855,9 @@ header .nav-container .nav-links ul li a {
   opacity: 0.7;
   text-align: center;
 }
+.reviews .swiper-container .swiper .swiper-wrapper .swiper-slide p:nth-child(2n) {
+  font-weight: 400;
+}
 .reviews .swiper-container .swiper .swiper-wrapper .swiper-slide img {
   width: 81px;
   height: 81px;
@@ -884,8 +887,93 @@ header .nav-container .nav-links ul li a {
   text-decoration: none;
 }
 
+footer {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #b50014;
+  padding: 3rem 2rem;
+  margin-top: 6rem;
+}
+@media (min-width: 1020px) {
+  footer .container {
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+}
+footer .container .info {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+footer .container .info .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1020px) {
+  footer .container .info .info-container {
+    align-items: start;
+  }
+}
+footer .container .info .info-container p {
+  display: flex;
+  align-items: center;
+}
+footer .container .info .info-container p:nth-child(2) {
+  padding-left: 0px;
+}
+@media (min-width: 1020px) {
+  footer .container .info .info-container p:nth-child(2) {
+    padding-left: 24px;
+  }
+}
+footer .container .info .info-container p svg {
+  display: none;
+}
+@media (min-width: 1020px) {
+  footer .container .info .info-container p svg {
+    display: block;
+  }
+}
+footer .container .logo {
+  width: 33%;
+  justify-content: center;
+  display: flex;
+  margin: 2rem 0px;
+}
+@media (min-width: 1020px) {
+  footer .container .logo {
+    margin: auto;
+  }
+}
+footer .container .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 33%;
+}
+@media (min-width: 1300px) {
+  footer .container .links {
+    flex-direction: row;
+  }
+}
+footer .container .links .links-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+footer .container .links p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 body {
-  height: 2050vh;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #000;

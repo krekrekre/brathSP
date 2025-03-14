@@ -9,10 +9,10 @@
 @import "./spicesSection";
 @import "./orderSection";
 @import "./awardsSection";
-@import "./reviewsSection.scss";
+@import "./reviewsSection";
+@import "./footer";
 
 body {
-  height: 2050vh;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   background-color: $backgroundColor;
