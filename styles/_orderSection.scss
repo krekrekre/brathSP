@@ -1,0 +1,26 @@
+.order {
+  font-family: "Roboto", sans-serif;
+  color: $textColor;
+  .container {
+    background: url("../images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; /* Center the image */
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      h2 {
+        font-size: 2rem;
+        line-height: 1.625rem;
+        font-weight: 700;
+      }
+      button {
+        @include secondaryButton;
+        border: 1px solid $secondaryRed;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
